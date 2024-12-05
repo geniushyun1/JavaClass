@@ -14,11 +14,15 @@ public class MainBankAccountReader {
              int ch;
              while((ch=fr.read()) != -1){
                  System.out.print((char)ch);
+                 Thread.sleep(200);
              }
              fr.close();
+
          } catch (FileNotFoundException e) {
              throw new RuntimeException(e);
          } catch (IOException e) {
+             throw new RuntimeException(e);
+         } catch (InterruptedException e) {
              throw new RuntimeException(e);
          }
      }
