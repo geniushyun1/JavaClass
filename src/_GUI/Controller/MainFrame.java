@@ -10,7 +10,7 @@ public class MainFrame extends JFrame {
 
   public static final int FRAME_HEIGHT = 500;
 
-  public static  int FRAME_X=600;
+  public static  int FRAME_X=7000;
 
   public static  int FRAME_Y=300;
 
@@ -28,12 +28,10 @@ public class MainFrame extends JFrame {
         add(orderInfoView);
 
 
-
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocation(frameX,frameY);
         setSize(FRAME_WIDTH,FRAME_HEIGHT);
         setVisible(true);
-
-
 
     }
 
